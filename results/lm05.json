@@ -1,0 +1,103 @@
+{
+ "model": "block_recurrent",
+ "repo": "(new) lucidrains/block-recurrent-transformer-pytorch 0.4.4",
+ "target_repo": "LM_Dec_Long_BlockRecurrent",
+ "category": "Long",
+ "upstream": "lucidrains/block-recurrent-transformer-pytorch (MIT), pip 0.4.4",
+ "unified": [
+  "block_width 128, recurrent layer 4"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "lm05",
+ "started": "2026-10-21 06:35:42",
+ "smoke": false,
+ "params": 18421248,
+ "micro_batch": null,
+ "steps": 6000,
+ "budget_steps": 6000,
+ "capped": false,
+ "batch": 32,
+ "train_len": 512,
+ "pairs": 16,
+ "bf16": true,
+ "minutes": 17.5,
+ "history": [
+  {
+   "step": 500,
+   "loss": 3.8729135990142822,
+   "acc_train_len": 0.060546875
+  },
+  {
+   "step": 1000,
+   "loss": 2.996183156967163,
+   "acc_train_len": 0.10205078125
+  },
+  {
+   "step": 1500,
+   "loss": 2.7393221855163574,
+   "acc_train_len": 0.11376953125
+  },
+  {
+   "step": 2000,
+   "loss": 2.6801602840423584,
+   "acc_train_len": 0.11181640625
+  },
+  {
+   "step": 2500,
+   "loss": 2.6016335487365723,
+   "acc_train_len": 0.14111328125
+  },
+  {
+   "step": 3000,
+   "loss": 2.5067288875579834,
+   "acc_train_len": 0.1748046875
+  },
+  {
+   "step": 3500,
+   "loss": 2.3589084148406982,
+   "acc_train_len": 0.18994140625
+  },
+  {
+   "step": 4000,
+   "loss": 2.295396566390991,
+   "acc_train_len": 0.21875
+  },
+  {
+   "step": 4500,
+   "loss": 2.1780130863189697,
+   "acc_train_len": 0.212890625
+  },
+  {
+   "step": 5000,
+   "loss": 2.131941795349121,
+   "acc_train_len": 0.2275390625
+  },
+  {
+   "step": 5500,
+   "loss": 2.0784332752227783,
+   "acc_train_len": 0.22900390625
+  },
+  {
+   "step": 6000,
+   "loss": 2.0677876472473145,
+   "acc_train_len": 0.23291015625
+  }
+ ],
+ "test": {
+  "512": {
+   "acc": 0.231201171875,
+   "answers": 8192
+  },
+  "1024": {
+   "acc": 0.0145263671875,
+   "answers": 8192
+  },
+  "2048": {
+   "acc": 0.0169677734375,
+   "answers": 8192
+  }
+ },
+ "chance": 0.015625,
+ "seconds": 1052.1
+}

@@ -1,0 +1,28 @@
+{
+ "model": "block_recurrent",
+ "repo": "(new) lucidrains/block-recurrent-transformer-pytorch 0.4.4",
+ "target_repo": "LM_Dec_Long_BlockRecurrent",
+ "category": "Long",
+ "upstream": "lucidrains/block-recurrent-transformer-pytorch (MIT), pip 0.4.4",
+ "unified": [
+  "block_width 128, recurrent layer 4"
+ ],
+ "torch": "2.5.1+cu124",
+ "gpu": "NVIDIA GeForce RTX 3070 Ti",
+ "stage": "verify5",
+ "started": "2026-10-21 06:53:17",
+ "smoke": false,
+ "rows": {
+  "512": {
+   "normal": 0.2294921875,
+   "values": 0.017578125,
+   "keys": 0.21435546875
+  },
+  "2048": {
+   "normal": 0.01611328125,
+   "values": 0.01806640625,
+   "keys": 0.01806640625
+  }
+ },
+ "seconds": 13.6
+}
